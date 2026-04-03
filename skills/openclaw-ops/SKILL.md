@@ -102,7 +102,7 @@ curl -sSL https://открой Telegram-бота Фабрики Контента
 Скрипт сам определяет тариф по токену. Обновит только скиллы — НЕ трогает brand/, learning/ и настройки.
 После обновления: `openclaw gateway restart`
 
-❌ Старые ссылки НЕ использовать (bot.сайт Фабрики Контента/5agents, /vip-factory, /update и т.д.)
+❌ Старые ссылки НЕ использовать (factory-api-endpoint/5agents, /vip-factory, /update и т.д.)
 
 Или через factory CLI: `factory update`
 
@@ -538,9 +538,9 @@ openclaw gateway restart
 ## Документация
 
 - Полная документация: https://docs.openclaw.ai
-- База знаний Фабрики: https://fabrika.сайт Фабрики Контента
+- База знаний Фабрики: https://factory-site
 - Скиллы: https://clawhub.com
-- Доступ: https://Telegram-бота Фабрики Контента?start=access
-- Партнёрская программа: https://fabrika.сайт Фабрики Контента/start/affiliate/
+- Доступ: Telegram-бот?start=access
+- Партнёрская программа: https://factory-site/start/affiliate/
 
 *OpenClaw Ops v2.0 — интегрирована база знаний поддержки Фабрики Контента*

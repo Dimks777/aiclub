@@ -1,6 +1,6 @@
 # Как выделить ключевые желания
 
-> © Фабрика Контента | OpenClaw Content Factory |  | https://Telegram-бота Фабрики Контента | сайт Фабрики Контента
+> © Фабрика Контента | OpenClaw Content Factory |  | Telegram-бот | factory-site
 
 ## Проблема
 

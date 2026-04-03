@@ -1,6 +1,6 @@
 # Анарбаева — Продуктовая матрица и ценообразование
 
-> © Фабрика Контента | OpenClaw Content Factory |  | https://Telegram-бота Фабрики Контента | сайт Фабрики Контента
+> © Фабрика Контента | OpenClaw Content Factory |  | Telegram-бот | factory-site
 
 > Источник: Курс Анарбаевой (2024) — кластер "Products & Sales"
 

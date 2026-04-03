@@ -24,7 +24,7 @@
 - Запусти: `claude` → пройди OAuth → войди через тот же claude.ai аккаунт
 
 ### Шаг 5: Установи Конструктор
-- Получи ссылку: https://Telegram-бота Фабрики Контента?start=access
+- Получи ссылку: Telegram-бот?start=access
 - Запусти установщик
 - Зайди в папку: `cd ~/content-factory`
 
@@ -91,7 +91,7 @@ openclaw models auth paste-token --provider anthropic
 ```
 
 ### Шаг 5: Установи Конструктор
-- Получи ссылку: https://Telegram-бота Фабрики Контента?start=access
+- Получи ссылку: Telegram-бот?start=access
 - Запусти установщик — он скачает скиллы и настроит workspace
 - ❌ НЕ используй git clone / git pull
 
