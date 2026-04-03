@@ -1,0 +1,6 @@
+.factory-token
+.factory-tier
+*.tar.gz
+install_galson.sh
+.DS_Store
+node_modules/
