@@ -1,6 +1,6 @@
 # Примеры ядер офферов по нишам
 
-> © Фабрика Контента | OpenClaw Content Factory | Макс Галсон | https://t.me/galsonproai | galson.pro
+> © Фабрика Контента | OpenClaw Content Factory |  | https://Telegram-бота Фабрики Контента | сайт Фабрики Контента
 
 ## Шаблон анализа
 

@@ -14,7 +14,7 @@
  *   brand-kit.json — цвета и шрифты (генерируется при онбординге)
  *   template.html — HTML-шаблон с плейсхолдерами
  * 
- * © Фабрика Контента | galson.pro
+ * © Фабрика Контента
  */
 
 const { chromium } = require('playwright');

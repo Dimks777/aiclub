@@ -86,7 +86,7 @@ Telegram → Gateway → выбирает агента по binding → аген
 2. **OpenClaw** → `npm install -g openclaw`
 3. **Первый запуск** → `openclaw init` (wizard)
 4. **Telegram бот** → @BotFather → /newbot → получить токен
-5. **Фабрика** → `curl -sSL https://bot.galson.pro/install | bash`
+5. **Фабрика** → `curl -sSL https://открой Telegram-бота Фабрики Контента`
 6. **Старт** → `openclaw gateway start`
 
 ❌ НЕ используй git clone / git pull — установщик единственная система обновления.
@@ -96,13 +96,13 @@ Telegram → Gateway → выбирает агента по binding → аген
 Одна команда для всех тарифов:
 
 ```bash
-curl -sSL https://bot.galson.pro/install | bash
+curl -sSL https://открой Telegram-бота Фабрики Контента
 ```
 
 Скрипт сам определяет тариф по токену. Обновит только скиллы — НЕ трогает brand/, learning/ и настройки.
 После обновления: `openclaw gateway restart`
 
-❌ Старые ссылки НЕ использовать (bot.galson.pro/5agents, /vip-factory, /update и т.д.)
+❌ Старые ссылки НЕ использовать (bot.сайт Фабрики Контента/5agents, /vip-factory, /update и т.д.)
 
 Или через factory CLI: `factory update`
 
@@ -282,7 +282,7 @@ openclaw --version
 npm update -g openclaw
 
 # Обновить скиллы Фабрики
-curl -sSL https://bot.galson.pro/install | bash
+curl -sSL https://открой Telegram-бота Фабрики Контента
 
 # Или через factory CLI
 factory update
@@ -538,9 +538,9 @@ openclaw gateway restart
 ## Документация
 
 - Полная документация: https://docs.openclaw.ai
-- База знаний Фабрики: https://fabrika.galson.pro
+- База знаний Фабрики: https://fabrika.сайт Фабрики Контента
 - Скиллы: https://clawhub.com
-- Доступ: https://t.me/galsonproAIbot?start=access
-- Партнёрская программа: https://fabrika.galson.pro/start/affiliate/
+- Доступ: https://Telegram-бота Фабрики Контента?start=access
+- Партнёрская программа: https://fabrika.сайт Фабрики Контента/start/affiliate/
 
 *OpenClaw Ops v2.0 — интегрирована база знаний поддержки Фабрики Контента*

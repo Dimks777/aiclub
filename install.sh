@@ -14,7 +14,7 @@ CROSS="${RED}✗${RESET}"
 echo ""
 echo -e "  ${BOLD}${CYAN}🏭 Фабрика Контента${RESET}"
 echo -e "  ${BOLD}One-Command Installer${RESET}"
-echo -e "  ${BOLD}Макс Галсон · galson.pro${RESET}"
+echo -e "  ${BOLD}AI-система для создания контента${RESET}"
 echo -e "  ═══════════════════════════════════════"
 echo ""
 

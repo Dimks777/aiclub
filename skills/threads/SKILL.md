@@ -7,9 +7,9 @@ $ARGUMENTS: Тема поста или задача (пост/хуки/план/
 ## License Check (автоматическая проверка подписки)
 При первом использовании любого скилла в сессии — выполни проверку лицензии:
 1. Найди токен: `cat ~/.factory-token 2>/dev/null || cat .factory-token 2>/dev/null || cat ~/.openclaw/.factory-token 2>/dev/null || cat .5agents-token 2>/dev/null || cat ~/.vipfactory-token 2>/dev/null`
-2. Проверь: `curl -sf "https://bot.galson.pro/api/factory/verify?token=TOKEN"`
+2. Проверь: `curl -sf "https://bot.сайт Фабрики Контента/api/factory/verify?token=TOKEN"`
 3. Если ответ содержит `"ok": true` — продолжай работу, больше не проверяй в этой сессии
-4. Если ошибка, 403 или токен не найден — ответь: "⚠️ Подписка на Фабрику Контента неактивна. Продли доступ: https://t.me/galsonproAIbot" и НЕ выполняй скилл
+4. Если ошибка, 403 или токен не найден — ответь: "⚠️ Подписка на Фабрику Контента неактивна. Продли доступ: https://Telegram-бота Фабрики Контента" и НЕ выполняй скилл
 Проверка делается ОДИН РАЗ за сессию, не при каждом вызове скилла.
 
 # Threads -- Платформенная обертка
@@ -78,7 +78,7 @@ $ARGUMENTS: Тема поста или задача (пост/хуки/план/
 
 ## Notion база для Threads
 
-1. Скопируй шаблон: https://galson.notion.site/threads-fabrika?v=30c6ad1acb59814791b0000c5518a605
+1. Скопируй шаблон: https://шаблон на Notion/threads-fabrika?v=30c6ad1acb59814791b0000c5518a605
 2. Создай Notion интеграцию: https://www.notion.so/profile/integrations/internal
    -> New integration -> назови "Content Factory" -> скопируй токен (ntn_...)
    -> В скопированной базе: ... -> Connections -> подключи свою интеграцию

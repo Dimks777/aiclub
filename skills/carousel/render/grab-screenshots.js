@@ -20,7 +20,7 @@
  * 
  * Требования: npm install playwright && npx playwright install chromium
  * 
- * © Фабрика Контента | galson.pro
+ * © Фабрика Контента
  */
 
 const { chromium } = require('playwright');
@@ -153,7 +153,7 @@ async function grabScreenshots(repos) {
   } else {
     console.log(`
 Screenshot Grabber for Carousel Slides
-© Фабрика Контента | galson.pro
+© Фабрика Контента
 
 Использование:
   node grab-screenshots.js repos.json      # массовый захват из JSON

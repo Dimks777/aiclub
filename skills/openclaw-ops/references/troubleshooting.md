@@ -113,7 +113,7 @@
 
 1. Проверь скилл `nano-banana`:
    - Должна быть версия **Nano Banana Pro (Gemini 3 Pro)**
-   - Если старая → обновить: `curl -sSL https://bot.galson.pro/install | bash`
+   - Если старая → обновить: `curl -sSL https://открой Telegram-бота Фабрики Контента`
 
 2. Проверь API-ключ LaoZhang:
    - Получить: https://api.laozhang.ai/register/?aff_code=XTb4

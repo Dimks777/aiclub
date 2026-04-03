@@ -1,6 +1,6 @@
 # Brand Carousel Defaults — Шаблон
 
-> © Фабрика Контента | OpenClaw Content Factory | Макс Галсон | https://t.me/your-brand | your-site.com
+> © Фабрика Контента | OpenClaw Content Factory |  | https://t.me/your-brand | your-site.com
 
 ## ⚠️ ГЛАВНЫЕ ПРАВИЛА
 

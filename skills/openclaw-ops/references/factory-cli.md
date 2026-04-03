@@ -99,7 +99,7 @@
 
 ### "factory: command not found"
 ```bash
-curl -sL https://bot.galson.pro/factory.js -o ~/.local/bin/factory && chmod +x ~/.local/bin/factory
+curl -sL https://скрипт управления фабрикой -o ~/.local/bin/factory && chmod +x ~/.local/bin/factory
 ```
 Если `~/.local/bin` не в PATH:
 ```bash
@@ -107,7 +107,7 @@ echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
 ```
 
 ### "Токен невалидный"
-Получить новый через @galsonproAIbot.
+Получить новый через бота Фабрики Контента.
 
 ### "Скиллы не найдены"
 ```bash
