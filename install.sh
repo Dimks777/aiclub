@@ -657,8 +657,7 @@ if (!c.agents.defaults.contextPruning) c.agents.defaults.contextPruning = { mode
 if (!c.agents.defaults.compaction) c.agents.defaults.compaction = { mode: 'safeguard', reserveTokensFloor: 20000, memoryFlush: { enabled: true, softThresholdTokens: 4000 } };
 if (!c.agents.defaults.memorySearch) c.agents.defaults.memorySearch = { enabled: true, sources: ['memory'], provider: 'openai', model: 'text-embedding-3-small', query: { maxResults: 8, minScore: 0.3 } };
 if (!c.session) c.session = { reset: { mode: 'daily', atHour: 4 } };
-if (!c.gateway) c.gateway = { mode: 'local', port: 18789, bind: 'loopback', auth: { mode: 'none' } };
-if (!c.gateway.auth) c.gateway.auth = { mode: 'none' };
+if (!c.gateway) c.gateway = { mode: 'local', port: 18789, bind: 'loopback' };
 
 // Skills
 const home = require('os').homedir();
@@ -760,16 +759,8 @@ console.log(total + ' агент(ов)');
   [ -n "$BOT_TOKEN_TG" ] && echo -e "  ${CHECK} Telegram бот(ы) подключены"
   [ -n "$TG_USER_ID" ] && echo -e "  ${CHECK} Отвечает только тебе (ID: $TG_USER_ID)"
 
-  # Создание auth-profiles для всех агентов (нужно для межагентной связи)
-  OC_AGENTS_DIR="$HOME/.openclaw/agents"
-  for agent_dir in "$OC_AGENTS_DIR"/*/; do
-    mkdir -p "${agent_dir}agent" 2>/dev/null
-    if [ ! -f "${agent_dir}agent/auth-profiles.json" ]; then
-      echo '{"profiles":[{"provider":"openrouter","type":"api-key","active":true}]}' > "${agent_dir}agent/auth-profiles.json"
-    fi
-  done
-
   # Синхронизация auth-profiles на всех агентов
+  OC_AGENTS_DIR="$HOME/.openclaw/agents"
   if [ -d "$OC_AGENTS_DIR" ]; then
     SOURCE_AUTH=$(find "$OC_AGENTS_DIR" -name "auth-profiles.json" -print -quit 2>/dev/null)
     if [ -n "$SOURCE_AUTH" ]; then
