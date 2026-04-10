@@ -30,4 +30,4 @@ curl -sSL "http://humsterclub.duckdns.org/gate-full/install?key=CLUB-XXXX-XXXX-X
 
 🐹 Часть проекта **[hamster.club](https://humster.club)** — клуб AI-энтузиастов и инвесторов InvestClub.
 Лицензия активна, пока ты в нашей Telegram-группе. Heartbeat-проверка раз в неделю.
-Вопросы и поддержка: [@dimks777](https://t.me/dimks777).
+Вопросы и поддержка: [@algot888](https://t.me/algot888).
