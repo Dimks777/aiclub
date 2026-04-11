@@ -1,5 +1,6 @@
 # 🏭 Фабрика Контента — One-Command Installer
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Часть InvestClub](https://img.shields.io/badge/🐹%20Часть-hamster.club-F59E0B)](https://humster.club/aiclub/) [![Telegram Bot](https://img.shields.io/badge/Telegram-@aiclub10__bot-26A5E4)](https://t.me/aiclub10_bot) [![Stars](https://img.shields.io/github/stars/Dimks777/aiclub?style=social)](https://github.com/Dimks777/aiclub/stargazers)
 Полная сборка фабрики контента InvestClub: 5 AI-агентов (координатор, копирайтер, маркетолог, дизайнер, технарь) + скиллы + Telegram-боты.
 
 ## Установка одной командой
