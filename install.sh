@@ -1,5 +1,5 @@
 #!/bin/bash
-# Фабрика Контента — Установщик v3.0
+# Фабрика Контента — Установщик v3.1
 # НЕ используем set -e — все ошибки обрабатываем явно
 
 # === Цвета ===
@@ -15,10 +15,69 @@ CHECK="${GREEN}✓${RESET}"
 CROSS="${RED}✗${RESET}"
 ARROW="${CYAN}→${RESET}"
 
+# ============================================================
+#  ЛИЦЕНЗИОННАЯ ПРОВЕРКА (InvestClub)
+#  Этот установщик предназначен только для участников клуба.
+#  Лицензию выдаёт бот @aiclub10_bot после проверки членства.
+#  При прямом запуске без лицензии — install.sh не работает.
+# ============================================================
+
+GATE_VERIFY_URL="${GATE_VERIFY_URL:-http://humsterclub.duckdns.org/gate-full/verify}"
+LICENSE_FILE="$HOME/.openclaw/.aiclub-license"
+
+# Получаем ключ из переменной окружения, файла или аргумента --key
+LICENSE_KEY="${AICLUB_LICENSE_KEY:-}"
+if [ -z "$LICENSE_KEY" ] && [ -f "$LICENSE_FILE" ]; then
+  LICENSE_KEY=$(cat "$LICENSE_FILE" 2>/dev/null | tr -d '[:space:]')
+fi
+
+if [ -z "$LICENSE_KEY" ]; then
+  echo ""
+  echo -e "  ${RED}❌ Лицензионный ключ не найден${RESET}"
+  echo ""
+  echo -e "  Этот установщик предназначен только для участников ${BOLD}клуба InvestClub${RESET}."
+  echo ""
+  echo -e "  ${BOLD}Получи персональный ключ:${RESET}"
+  echo -e "    1. Открой бота ${CYAN}@aiclub10_bot${RESET} в Telegram"
+  echo -e "    2. Напиши команду ${CYAN}/install${RESET}"
+  echo -e "    3. Бот проверит твоё членство в группе и пришлёт готовую команду установки"
+  echo ""
+  echo -e "  ${DIM}Документация: https://humster.club/aiclub/5agents/install-5agents.html${RESET}"
+  echo ""
+  exit 1
+fi
+
+# Проверка лицензии через gate-сервер
+echo ""
+echo -e "  ${ARROW} Проверяю лицензию..."
+RESULT=$(curl -sf --max-time 10 "${GATE_VERIFY_URL}?key=${LICENSE_KEY}" 2>/dev/null || echo "")
+
+if echo "$RESULT" | grep -q '"valid":true'; then
+  MEMBER=$(echo "$RESULT" | sed -n 's/.*"member":"\([^"]*\)".*/\1/p')
+  echo -e "  ${CHECK} Лицензия активна (участник: ${BOLD}${MEMBER:-unknown}${RESET})"
+elif echo "$RESULT" | grep -q '"valid":false'; then
+  REASON=$(echo "$RESULT" | sed -n 's/.*"reason":"\([^"]*\)".*/\1/p')
+  echo -e "  ${CROSS} Лицензия не действительна (${REASON:-unknown})"
+  echo ""
+  echo -e "  Возможно, ты вышел из группы Десятки. Получи новый ключ:"
+  echo -e "  → @aiclub10_bot → /install"
+  echo ""
+  exit 1
+else
+  echo -e "  ${CROSS} Не удалось связаться с gate-сервером ($GATE_VERIFY_URL)"
+  echo -e "  Проверь интернет и повтори установку."
+  exit 1
+fi
+echo ""
+
+# ============================================================
+#  ОРИГИНАЛЬНЫЙ УСТАНОВЩИК
+# ============================================================
+
 clear 2>/dev/null || true
 echo ""
 echo -e "  ${BOLD}${CYAN}🏭 Фабрика Контента${RESET}"
-echo -e "  ${BOLD}One-Command Installer v3.0${RESET}"
+echo -e "  ${BOLD}One-Command Installer v3.1${RESET}"
 echo -e "  ${BOLD}AI-система для создания контента${RESET}"
 echo -e "  ═══════════════════════════════════════"
 echo ""
