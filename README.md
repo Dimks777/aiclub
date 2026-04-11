@@ -1,34 +1,52 @@
-# 🏭 Фабрика Контента — One-Command Installer
+# 🤖 Фабрика Контента — Полная версия (5 агентов)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Часть InvestClub](https://img.shields.io/badge/🐹%20Часть-hamster.club-F59E0B)](https://humster.club/aiclub/) [![Telegram Bot](https://img.shields.io/badge/Telegram-@aiclub10__bot-26A5E4)](https://t.me/aiclub10_bot) [![Stars](https://img.shields.io/github/stars/Dimks777/aiclub?style=social)](https://github.com/Dimks777/aiclub/stargazers)
-Полная сборка фабрики контента InvestClub: 5 AI-агентов (координатор, копирайтер, маркетолог, дизайнер, технарь) + скиллы + Telegram-боты.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Часть hamster.club](https://img.shields.io/badge/🐹%20InvestClub-hamster.club-F59E0B)](https://humster.club/aiclub/) [![Telegram Bot](https://img.shields.io/badge/Telegram-@aiclub10__bot-26A5E4)](https://t.me/aiclub10_bot)
 
-## Установка одной командой
+Полная Фабрика Контента InvestClub: **5 AI-агентов работают как команда** — координатор, копирайтер, маркетолог, дизайнер, технарь. Каждый — отдельный Telegram-бот со своей памятью и скиллами. Все связаны через общее пространство.
 
-Лицензия выдаётся ботом [@investhomiak_bot](https://t.me/investhomiak_bot) после проверки членства в группе клуба. После получения ключа:
+## ⚡ Установка одной командой
+
+Лицензия выдаётся ботом [@aiclub10_bot](https://t.me/aiclub10_bot) после проверки членства в группе Десятки. Получи ключ и выполни:
 
 ```bash
-curl -sSL "http://humsterclub.duckdns.org/gate-full/install?key=CLUB-XXXX-XXXX-XXXX" | bash
+curl -sSL "http://humsterclub.duckdns.org/gate-full/install?key=FULL-XXXX-XXXX-XXXX" | bash
 ```
 
-## Что внутри
+Установщик сам:
+- Проверит систему и зависимости
+- Скачает фабрику с GitHub
+- Развернёт 5 агентов с памятью
+- Настроит heartbeat-проверку лицензии раз в неделю
+- Поднимет Telegram-боты и подключит их к OpenClaw
 
-- `factory/` — агенты и конфигурация OpenClaw
-- `skills/` — набор скиллов для каждого агента
-- `install.sh` — скрипт развёртывания
+## 👥 Что внутри
 
-## Документация и гайды
+| Агент | Роль |
+|---|---|
+| 🎯 **Координатор** | Точка входа, маршрутизирует задачи |
+| 📝 **Копирайтер** | Пишет посты по методу Халилова в твоём голосе |
+| 📊 **Маркетолог** | Распаковка ЦА, оффер, стратегия |
+| 🎨 **Дизайнер** | Обложки, карусели, визуал |
+| 🔧 **Технарь** | Диагностика и фиксы платформы |
 
-📚 **База знаний:** https://humster.club/aiclub/ (логин для участников клуба)
+## 🧠 Принцип работы
 
-📖 **Гайд установки 5 агентов:** https://humster.club/aiclub/5agents/install-5agents.html
+**Один правит — все видят.** Маркетолог собрал ЦА → копирайтер сразу пишет точнее → дизайнер делает обложки в нужном тоне. Без передачи контекста руками, без копи-пасты.
 
-🐸 **Lite-версия (1 агент):** [Dimks777/aiclublight](https://github.com/Dimks777/aiclublight)
+## 📚 Документация
 
-📊 **Дашборд:** [Dimks777/content-factory](https://github.com/Dimks777/content-factory)
+- 📖 **Полный гайд установки:** https://humster.club/aiclub/5agents/install-5agents.html
+- 📊 **Дашборд content-factory:** [Dimks777/content-factory](https://github.com/Dimks777/content-factory)
+- 🐹 **Lite-версия (1 агент):** [Dimks777/aiclublight](https://github.com/Dimks777/aiclublight)
+- 🧠 **Скиллы для Claude:** [Dimks777/awesome-claude-skills](https://github.com/Dimks777/awesome-claude-skills)
+- 📚 **База знаний клуба:** https://humster.club/aiclub/
+
+## 🛡️ Лицензия и доступ
+
+Доступ к коду — только для участников клуба InvestClub. Лицензия активна, пока ты в нашей Telegram-группе. Heartbeat-проверка раз в неделю — если выйдешь из клуба, фабрика автоматически блокируется.
+
+Код выпущен под MIT License (см. LICENSE), но платформа OpenClaw + лицензионный gate — закрытая часть проекта.
 
 ---
 
-🐹 Часть проекта **[hamster.club](https://humster.club)** — клуб AI-энтузиастов и инвесторов InvestClub.
-Лицензия активна, пока ты в нашей Telegram-группе. Heartbeat-проверка раз в неделю.
-Вопросы и поддержка: [@algot888](https://t.me/algot888).
+🐹 Часть проекта **[hamster.club](https://humster.club)** — клуб AI-энтузиастов и инвесторов InvestClub. По вопросам: [@algot888](https://t.me/algot888)
